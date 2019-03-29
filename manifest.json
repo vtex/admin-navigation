@@ -1,0 +1,13 @@
+{
+  "name": "admin-navigation",
+  "vendor": "vtex",
+  "version": "0.0.0",
+  "title": "VTEX Admin Navigation Extension Interface",
+  "description": "",
+  "categories": [],
+  "settingsSchema": {},
+  "dependencies": {},
+  "scripts": {
+    "postreleasy": "vtex publish"
+  }
+}
