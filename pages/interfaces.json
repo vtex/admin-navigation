@@ -1,0 +1,12 @@
+{
+  "admin": {
+    "allowConditions": false,
+    "component": "*",
+    "render": "client"
+  },
+  "admin.app": {
+    "allowConditions": false,
+    "component": "*",
+    "render": "client"
+  }
+}

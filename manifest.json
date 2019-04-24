@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "title": "VTEX Admin Navigation Extension Interface",
   "description": "",
+  "builders": {
+    "pages": "1.x"
+  },
   "categories": [],
   "settingsSchema": {},
   "dependencies": {},
