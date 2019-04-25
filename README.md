@@ -4,28 +4,34 @@ This app defines the extension interface for other apps to add themselves to the
 
 ### How to add your app to the admin navigation
 
-1. Create an `admin/admin.json` file containing your `routes` and `navigation`. All admin apps must have the prefix `/admin/app/` to all their routes.
+1. Create an `admin/routes.json` file containing your `routes` and an `admin/navigation.json` file containing your `navigation`.
+   All admin apps must have the prefix `/admin/app/` to all their routes.
+
+example routes.json
 
 ```
 {
-  "routes": {
-    "admin.example": {
-      "component": "ExampleAdmin",
-      "path": "/admin/app/example"
+  "admin.example": {
+    "component": "ExampleAdmin",
+    "path": "/admin/app/example"
+  }
+}
+```
+
+example navigation.json
+
+```
+{
+  "icon": "inventory-shipping-ic",
+  "id": "9",
+  "subItems": [
+    {
+      "labelId": "appframe.navigation.pickupPoints",
+      "path": "/admin/example"
     }
-  },
-  "navigation": {
-      "icon": "inventory-shipping-ic",
-      "id": "9",
-      "subItems": [
-        {
-          "labelId": "appframe.navigation.pickupPoints",
-          "path": "/admin/example"
-        }
-      ],
-      "titleId": "appframe.navigation.inventoryAndShipping",
-      "group": "delivery"
-    } 
+  ],
+  "titleId": "appframe.navigation.inventoryAndShipping",
+  "group": "delivery"
 }
 ```
 
@@ -44,4 +50,3 @@ This app defines the extension interface for other apps to add themselves to the
 ### Admin Example
 
 Check out https://github.com/vtex-apps/admin-example for a complete admin example.
-
